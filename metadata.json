@@ -1,0 +1,6 @@
+{
+  "name": "AnomaSea",
+  "description": "AnomaSea marine debris monitoring platform featuring an interactive Leaflet Environmental Risk Radar, DBSCAN spatial hotspot analysis, and SDG 14 survey reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Leaflet Radar Canvas & Popups */
+.leaflet-container {
+  font-family: var(--font-sans);
+  z-index: 1;
+  background: #dbeafe;
+}
+
+.leaflet-popup-content-wrapper {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 0 12px 28px -6px rgba(15, 23, 42, 0.18);
+}
+
+.leaflet-popup-content {
+  min-width: 256px;
+  margin: 0;
+}
+
+.leaflet-popup-tip {
+  border: 1px solid #cbd5e1;
+}
+
+.anomasea-cluster-icon,
+.anomasea-marker-icon {
+  background: transparent;
+  border: none;
+}
+
+/* Custom subtle scrollbars for dense telemetry panels */
+.anomasea-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.anomasea-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.anomasea-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.anomasea-scroll::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
